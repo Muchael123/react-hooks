@@ -16,7 +16,10 @@ function App() {
     <div className="App">
       <LoginContext.Provider value={[signedIn, setSignedIn]}>
         {signedIn ? (
-          <Login />
+          <div>
+            <Login />
+            <DisplaySign />
+          </div>
         ) : (
           <div>
             <SignIn />
